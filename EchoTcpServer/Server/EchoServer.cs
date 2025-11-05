@@ -1,7 +1,7 @@
 ﻿using System.Net.Sockets;
-using EchoServer.Interfaces;
+using EchoTspServer.Interfaces;
 
-namespace EchoServer.Server
+namespace EchoTspServer.Server
 {
     /// <summary>
     /// TCP Echo Server with dependency injection support

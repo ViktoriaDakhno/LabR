@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Net;
 using System.Net;
-using EchoServer.Handlers;
-using EchoServer.Infrastructure;
-using EchoServer.Server;
-using EchoServer.Udp;
+using EchoTspServer.Handlers;
+using EchoTspServer.Infrastructure;
+using EchoTspServer.Server;
+using EchoTspServer.Udp;
 
-namespace EchoServer
+namespace EchoTspServer
 {
     public class Program
     {
@@ -15,7 +15,7 @@ namespace EchoServer
             // Setup dependencies
             var listener = new TcpListenerWrapper(IPAddress.Any, 5000);
             var clientHandler = new EchoClientHandler();
-            var server = new EchoServer.Server.EchoServer(listener, clientHandler);
+            var server = new EchoServer(listener, clientHandler);
 
             // Start the server
             _ = Task.Run(() => server.StartAsync());

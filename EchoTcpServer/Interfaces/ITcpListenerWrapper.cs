@@ -1,6 +1,6 @@
 ﻿using System.Net.Sockets;
 
-namespace EchoServer.Interfaces
+namespace EchoTspServer.Interfaces
 {
     /// <summary>
     /// Wrapper interface for TcpListener to enable testing

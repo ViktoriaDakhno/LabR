@@ -1,8 +1,8 @@
 ﻿using System.Net;
 using System.Net.Sockets;
-using EchoServer.Interfaces;
+using EchoTspServer.Interfaces;
 
-namespace EchoServer.Infrastructure
+namespace EchoTspServer.Infrastructure
 {
     /// <summary>
     /// Wrapper for TcpListener to enable dependency injection and testing

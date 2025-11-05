@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace EchoServer.Udp
+namespace EchoTspServer.Udp
 {
     /// <summary>
     /// Builds UDP messages with header and payload

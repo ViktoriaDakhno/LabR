@@ -1,4 +1,4 @@
-﻿namespace EchoServer.Interfaces
+﻿namespace EchoTspServer.Interfaces
 {
     /// <summary>
     /// Interface for UDP message sending

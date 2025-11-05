@@ -1,6 +1,6 @@
-﻿using EchoServer.Interfaces;
+﻿using EchoTspServer.Interfaces;
 
-namespace EchoServer.Handlers
+namespace EchoTspServer.Handlers
 {
     /// <summary>
     /// Handles echo logic for connected clients

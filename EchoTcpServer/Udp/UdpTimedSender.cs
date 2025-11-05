@@ -1,8 +1,8 @@
 ﻿using System.Net;
 using System.Net.Sockets;
-using EchoServer.Interfaces;
+using EchoTspServer.Interfaces;
 
-namespace EchoServer.Udp
+namespace EchoTspServer.Udp
 {
     /// <summary>
     /// Sends UDP messages at timed intervals
