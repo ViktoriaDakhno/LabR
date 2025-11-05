@@ -15,7 +15,7 @@ namespace EchoServer
             // Setup dependencies
             var listener = new TcpListenerWrapper(IPAddress.Any, 5000);
             var clientHandler = new EchoClientHandler();
-            var server = new EchoServer(listener, clientHandler);
+            var server = new EchoServer.Server.EchoServer(listener, clientHandler);
 
             // Start the server
             _ = Task.Run(() => server.StartAsync());
