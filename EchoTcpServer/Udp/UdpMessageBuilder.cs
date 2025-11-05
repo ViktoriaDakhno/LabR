@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Security.Cryptography;
 
 namespace EchoServer.Udp
 {
@@ -14,8 +15,11 @@ namespace EchoServer.Udp
         public byte[] BuildMessage()
         {
             byte[] samples = new byte[1024];
-            // генеруємо випадкові байти для тестових даних
-            _random.NextBytes(samples);
+            // генеруємо випадкові байти для тестових даних безпечним способом
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(samples);
+            }
 
             _sequenceNumber++;
             byte[] header = new byte[] { 0x04, 0x84 };
