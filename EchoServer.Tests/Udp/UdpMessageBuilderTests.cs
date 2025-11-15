@@ -36,6 +36,7 @@ namespace EchoTspServer.Tests.Udp
             Assert.That(message[1], Is.EqualTo(0x84));
         }
 
+
         [Test]
         public void BuildMessage_GeneratesDifferentPayloads()
         {
