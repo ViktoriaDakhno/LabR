@@ -14,7 +14,6 @@ namespace EchoTspServer
     /// Entry point for the Echo Server application
     /// </summary>
 
-    [ExcludeFromCodeCoverage]
     public class Program
     {
 

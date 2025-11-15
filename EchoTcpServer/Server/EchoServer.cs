@@ -44,7 +44,6 @@ namespace EchoTspServer.Server
         }
 
         [ExcludeFromCodeCoverage]
-        
         private async Task HandleClientConnectionAsync(TcpClient client, CancellationToken token)
         {
             try
