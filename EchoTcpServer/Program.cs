@@ -14,8 +14,10 @@ namespace EchoTspServer
     /// Entry point for the Echo Server application
     /// </summary>
 
+    [ExcludeFromCodeCoverage]
     public class Program
     {
+
         [ExcludeFromCodeCoverage]
         public static void Main(string[] args)
         {

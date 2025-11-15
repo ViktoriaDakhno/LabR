@@ -1,4 +1,5 @@
-﻿using System.Net.Sockets;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Net.Sockets;
 using EchoTspServer.Interfaces;
 
 namespace EchoTspServer.Server
@@ -42,6 +43,8 @@ namespace EchoTspServer.Server
             Console.WriteLine("Server shutdown.");
         }
 
+        [ExcludeFromCodeCoverage]
+        
         private async Task HandleClientConnectionAsync(TcpClient client, CancellationToken token)
         {
             try

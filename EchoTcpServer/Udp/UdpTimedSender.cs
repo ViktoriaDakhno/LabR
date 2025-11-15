@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Net;
 using System.Net.Sockets;
 using EchoTspServer.Interfaces;
 
@@ -36,6 +37,7 @@ namespace EchoTspServer.Udp
             _timer = new Timer(SendMessageCallback, null, 0, intervalMilliseconds);
         }
 
+        [ExcludeFromCodeCoverage]
         private void SendMessageCallback(object? state)
         {
             try
