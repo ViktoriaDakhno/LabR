@@ -10,7 +10,6 @@ namespace EchoTspServer.Udp
     public class UdpMessageBuilder
     {
         private ushort _sequenceNumber = 0;
-        private readonly Random _random = new Random();
 
         public byte[] BuildMessage()
         {

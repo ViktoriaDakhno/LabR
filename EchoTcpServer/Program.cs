@@ -23,7 +23,7 @@ namespace EchoTspServer
             MainInternal(args, Console.In).GetAwaiter().GetResult();
         }
 
-        // тестований метод з параметром input
+        [ExcludeFromCodeCoverage]
         public static async Task MainInternal(string[] args, TextReader input)
         {
             input ??= Console.In;
